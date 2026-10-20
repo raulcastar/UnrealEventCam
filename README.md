@@ -5,11 +5,12 @@ brightness-change events with the ESIM model, and streams them to ROS over TCP.
 
 ![Camera image next to the events generated from it](docs/images/events.gif)
 
-*The rover driving in GNC Moon Simulator: the camera (left) and the events
+*The rover driving in MARE: the camera (left) and the events
 accumulated per frame (right; blue brighter, red darker).*
 
-Part of [GNC Moon Simulator](https://github.com/raulcastar/GNC-Moon-Simulator):
-its `component_event_camera` node receives the events on port 3005.
+Part of [MARE](https://github.com/raulcastar/MARE-Lunar-Simulator), an open-source lunar rover
+simulation suite. In its ROS 2 stack,
+[GNC-Moon-Simulator](https://github.com/raulcastar/GNC-Moon-Simulator), the `component_event_camera` node receives the events on port 3005.
 
 ## Requirements
 
@@ -17,8 +18,8 @@ Unreal Engine 5.7 on Windows (the version it is developed and tested with).
 Building from source also needs Visual Studio 2022 with the *Game development
 with C++* workload.
 
-On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with GNC Moon Simulator's
-`component_event_camera` node receiving the stream. The plugin itself has no ROS
+On the ROS side: ROS 2 Jazzy (Ubuntu 24.04), with the
+`component_event_camera` node of GNC-Moon-Simulator receiving the stream. The plugin itself has no ROS
 dependency: any program that reads the [wire format](docs/wire-format.md) can use it.
 
 ## Install

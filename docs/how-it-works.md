@@ -29,7 +29,7 @@ resolution modest, and avoid extremely small contrast thresholds.
 
 The event-generation core (`EventSimulator.h` / `.cpp`) is a port of the
 **EventSimulator** from **ESIM (rpg_esim)** by the Robotics and Perception Group,
-University of Zurich — used under MIT License (see [`LICENSE`](LICENSE)).
+University of Zurich — used under MIT License (see [`LICENSE`](../LICENSE)).
 
 The port keeps ESIM's algorithm — per-pixel log-intensity threshold crossings,
 linear timestamp interpolation between frames, per-polarity contrast thresholds,
